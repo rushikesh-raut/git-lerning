@@ -1,0 +1,24 @@
+
+<p>child works!</p>
+
+{{h2.name}}   {{h2.lname}}  {{h2.clg}}
+
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>lname</th>
+            <th>clg</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let a of abc ">
+            <td>{{a.name}}</td>
+            <td>{{a.lname}}</td>
+            <td>{{a.clg}}</td>
+        </tr>
+    </tbody>
+</table>
+<button (click)="add()">add</button>
+<button (click)="jio()">output</button>
+

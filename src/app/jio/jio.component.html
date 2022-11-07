@@ -1,0 +1,24 @@
+<p>jio works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>sr.no</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>address</th>
+            <th>clg</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arr of use index as i" style="border: solid black;">
+            <td>{{i+1}}</td>
+            <td>{{arr.firstname}}</td>
+            <td>{{arr.lastname}}</td>
+            <td>{{arr.address}}</td>
+            <td>{{arr.clg}}</td>
+            <td><button (click)="hello(arr)" class="btn btn-primary">edit</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<router-outlet></router-outlet>

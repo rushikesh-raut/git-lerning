@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h3> plese enter Email</h3>
+                </div>
+                <form [formGroup]="profile">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="name">
+                      <div *ngIf="profile.controls['name'].invalid && (profile.controls['name'].dirty||profile.controls['name'].touched)">
+                        <div *ngIf="profile.controls['name'].errors?.['required']">
+plese enter your required...
+                       </div>
+                      <div *ngIf="profile.controls['name'].errors?.['maxlength']">
+enter only 6...car.
+                      </div>
+                      <div *ngIf="profile.controls['name'].errors?.['minlength']">
+                        enter only 4...car.
+                                              </div>
+
+                      </div>
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="email">
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="hello()" [disabled]="!profile.valid" >Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

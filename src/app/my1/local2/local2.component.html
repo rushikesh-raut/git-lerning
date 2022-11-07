@@ -1,0 +1,54 @@
+<p>local2 works!</p>
+
+
+{{disk}}
+<button (mousemove)="hello()">click</button>
+
+
+<img [src]="h1" alt="">
+
+
+     <!-- attribute directive in [ngClass] -->
+
+<!-- <div [ngClass]="h2? 'morning':'evening'">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+</div>
+
+<div [ngClass]="attribute">
+hello my name is rushikesh
+</div>
+ -->
+    
+ <div [ngClass]="h3? 'rushi':'prafull'">
+hello my name pk
+ </div>
+ <!-- <div [ngClass]="arr">
+    hello may name etc...
+ </div>
+ <button (click)="abc()">orignal</button>
+ <button (click)="hell()">normal</button> -->
+
+       <!-- [ngstyle] in directie  -->
+
+       <div [ngStyle]="style">
+        <p>hello my name is khan...</p>
+       </div>
+<button (click)="h11('add')">add</button>
+<button (click)="h11('mul')">mul</button>
+<button (click)="h11('div')">div</button>
+<button (click)="h11('sub')">sub</button>
+<br>
+
+ 
+<input type=" text" placeholder="plese">
+<div [ngSwitch]="h10">
+<div *ngSwitchCase="'add'" style="background-color:darkgoldenrod;">additoin={{result}}</div>
+<div *ngSwitchCase="'mul'">multiplication={{result}}</div>
+<div *ngSwitchCase="'div'">division = {{result}}</div>
+<div *ngSwitchCase="'sub'">subtraction={{result}}</div>
+<div *ngSwitchCase>defailt</div>
+</div>
+
+<a routerLink="form1"><h3>form1</h3></a>
+
+<router-outlet></router-outlet>

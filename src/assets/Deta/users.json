@@ -1,0 +1,12 @@
+{
+"users":[{
+    "email":"@aashu.com",
+    "password":"abcd",
+    "id":1
+},{
+    "email":"@rushu.com",
+    "password":"accd",
+    "id":1
+
+}]
+}
